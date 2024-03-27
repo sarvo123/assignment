@@ -1,0 +1,55 @@
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.left {
+  flex: 1;
+}
+
+.left p {
+  margin: 0;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-button {
+  background-color: rgb(202, 202, 234);
+  color: rgb(18, 17, 17);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 14px;
+  transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
+.custom-button:hover {
+  background-color: lightgreen; /* Change color on hover */
+}
+
+.right span {
+  font-size: 14px;
+  padding-right: 29px;
+  font-style: italic;
+  color: #d01d1df2;
+  font-weight: 600;
+}
+
+/* Added hover effect */
+.list-item:hover {
+  background-color: rgb(182, 216, 150);
+}
+.list-item:hover .right button {
+  background-color: #5a98df;
+  color: rgb(159, 229, 159);
+}
+
+.list-item:hover .right span {
+  color: #101110;
+}
